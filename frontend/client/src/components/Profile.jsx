@@ -37,7 +37,7 @@ const Profile = () => {
                     <img src={hiwave} className='w-20 lg:w-24' alt="" /> 
                 </div>
 
-                {/* <div className='flex flex-col space-y-6 bg-white p-10 rounded-3xl shadow-2xl border border-gray-300'>
+                <div className='flex flex-col space-y-6 bg-white p-10 rounded-3xl shadow-2xl border border-gray-300'>
                     
                     <div className='flex flex-col lg:flex-row gap-6'>
 
@@ -59,7 +59,7 @@ const Profile = () => {
                         </div>
                     </div>
             
-                </div> */}
+                </div
 
             </div>
             <hr />
