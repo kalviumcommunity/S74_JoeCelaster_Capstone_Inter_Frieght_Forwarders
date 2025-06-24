@@ -17,6 +17,7 @@ const Signup = () => {
     const [confirmPassword,setConfirmPassword] = useState("")
     const navigate = useNavigate()
     const apiURL = import.meta.env.VITE_BACKEND_URL;
+    console.log("Api:",apiURL)
 
     
     const handleSignup = async (e) => {

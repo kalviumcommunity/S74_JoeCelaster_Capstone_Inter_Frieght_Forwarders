@@ -8,7 +8,7 @@ import sea from '../assets/sea.png'
 import gml from '../assets/gml.avif'
 import kgm from '../assets/kgm.png'
 import ship from '../assets/ship.jpg'
-import bgVideo from '../assets/port-video.mp4'
+
 import heroship from '../assets/hero-ship.mp4'
 
 import numberOne from '../assets/image-1.png'
@@ -25,9 +25,11 @@ const Body = () => {
                 <div className='relative h-screen overflow-hidden'>
                     <div className='absolute h-[100vh] w-full overflowhidden z-0'>
 
-                        <video autoPlay muted loop className='absolute z-0'>
-                            <source src={bgVideo}/>
+                        <video autoPlay muted loop playsInline className="absolute z-0 w-full h-full object-cover">
+                            <source src="/port-video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
                         </video>
+
                     </div>
 
                     <div className='relative p-20 max-w-4xl text-white z-10' >
