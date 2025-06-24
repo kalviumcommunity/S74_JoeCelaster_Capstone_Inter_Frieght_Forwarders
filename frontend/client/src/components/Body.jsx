@@ -45,10 +45,10 @@ const Body = () => {
 
                 </div>
             {/* <img src={hero} alt="" /> */}
-                <div className="overflow-hidden py-8 bg-gray-50 ">
+                <div className="overflow-hidden py-8 bg-gray-50">
                     <h2 className="text-center text-2xl tracking-wider font-light mb-4">Trusted by Top Clients</h2>
                     <div className="overflow-hidden mx-auto w-[850px] flex justify-center items-center">
-                        <div className="whitespace-nowrap  animate-slide flex gap-10 px-4">
+                        <div className="whitespace-nowrap animate-slide flex gap-10 px-4">
                         {logos.map((logo, i) => (
                             <img key={i} src={logo} alt="Client Logo" className="h-16 inline-block" />
                         ))}

@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Profile from './components/Profile';
 import Account from './components/Account';
+import Shipment from './components/Shipment';
 const App = () => {
     return (
         <div>
@@ -20,6 +21,7 @@ const App = () => {
                     <Route path='/signup' element={<Signup/>}/>
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/account' element={<Account/>}/>
+                    <Route path='/shipment' element={<Shipment/>}></Route>
                 </Routes>
             </Router>
         </div>
