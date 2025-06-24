@@ -6,6 +6,7 @@ import Google from '../components/ContinuewithGoogle'
 import Apple from '../components/ContinueWithApple'
 import axios from 'axios';
 
+
 const Signup = () => {
 
     const [FirstName, setFirstName] = useState("")
@@ -15,11 +16,13 @@ const Signup = () => {
     const [password,setPassword] = useState("")
     const [confirmPassword,setConfirmPassword] = useState("")
     const navigate = useNavigate()
+    const apiURL = import.meta.env.VITE_BACKEND_URL;
 
+    
     const handleSignup = async (e) => {
-    e.preventDefault();
-    try {
-        const res = await axios.post('http://localhost:5000/users/register', {FirstName,LastName,email,password});
+        e.preventDefault();
+        try {
+        const res = await axios.post(`${apiURL}/users/register`, {FirstName,LastName,email,password});
         console.log(res.data);
         // if (res.data.success){
             //     }
