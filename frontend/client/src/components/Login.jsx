@@ -16,7 +16,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post(`${apiURL}users/login`,{email,password})
+            const res = await axios.post(`${apiURL}/users/login`,{email,password})
             // localStorage.setItem("token",res.data.token)
             // console.log(res.data)
             console.log(res.data)
